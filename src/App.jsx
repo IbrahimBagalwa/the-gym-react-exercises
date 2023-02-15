@@ -1,5 +1,7 @@
+import Mapping from "./exercises/maping";
+
 function App() {
-  return <div className=""></div>;
+  return <Mapping />;
 }
 
 export default App;
