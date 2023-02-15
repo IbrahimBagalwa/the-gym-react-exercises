@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-const Button = ({ title, style }) => {
+const Button = ({ title, styles }) => {
   return (
     <button
-      className={`rounded-2xl ring-1 px-2 mt-20 ${style}`}
+      className={`rounded-2xl ring-1 px-2 mt-20 ${styles}`}
       onClick={() => alert(`You clicked on ${title}`)}
     >
       {title}
@@ -12,7 +12,7 @@ const Button = ({ title, style }) => {
 };
 Button.propTypes = {
   title: PropTypes.string.isRequired,
-  style: PropTypes.string,
+  styles: PropTypes.string,
 };
 Button.defaultProps = {
   title: "click me",

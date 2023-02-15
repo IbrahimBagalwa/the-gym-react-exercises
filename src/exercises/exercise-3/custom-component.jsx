@@ -17,9 +17,9 @@ const CustomComponent = () => {
         <li className="px-2">Exercise 9</li>
       </ul>
       <div className="flex">
-        <Button title="Button 1" style="mx-2" />
-        <Button title="Button 2" style="mx-2" />
-        <Button title="Button 3" style="mx-2" />
+        <Button title="Button 1" styles="mx-2" />
+        <Button title="Button 2" styles="mx-2" />
+        <Button title="Button 3" styles="mx-2" />
       </div>
     </div>
   );
