@@ -17,7 +17,7 @@ const CapturingUser = () => {
       </ul>
       <button
         className="rounded-2xl ring-1 px-2 mt-20"
-        onClick={() => alert("clicked!")}
+        onClick={() => alert("Clicked!")}
       >
         Click me
       </button>
