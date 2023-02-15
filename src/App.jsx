@@ -1,5 +1,7 @@
+import BuildForm from "./exercises/exercise-7/form";
+
 function App() {
-  return <div className=""></div>;
+  return <BuildForm />;
 }
 
 export default App;
