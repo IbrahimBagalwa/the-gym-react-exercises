@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import ReactCardFlip from "reactjs-flip-card";
+import BackCard from "../components/BackCard";
+import FrontCard from "../components/FrontCard";
 const url = "https://random-data-api.com/api/users/random_user?size=10";
 const WorkingWithApi = () => {
   const [data, setData] = useState([]);
@@ -37,22 +40,13 @@ const Card = ({ content }) => {
   return (
     <div className="bg-[#DFF8DB] grid grid-cols-3 items-center justify-between  m-10 p-10 rounded-sm">
       {content.map((item) => {
-        const { id, last_name, first_name, avatar, employment } = item;
         return (
-          <>
-            <div
-              key={id}
-              className="bg-white rounded-lg m-10 flex justify-center items-center flex-col"
-            >
-              <img src={avatar} alt={last_name} />
-              <div className="">
-                <h2 className="text-xl font-medium">
-                  {first_name} {last_name}
-                </h2>
-                <p className="text-lg">{employment.title}</p>
-              </div>
-            </div>
-          </>
+          <ReactCardFlip
+            key={item.id}
+            containerCss="bg-white rounded-lg m-6 px-2 flex justify-center items-center flex-col w-[300px] h-[380px]"
+            frontComponent={<FrontCard {...item} />}
+            backComponent={<BackCard />}
+          />
         );
       })}
     </div>
