@@ -1,5 +1,7 @@
+import WorkingWithApi from "./exercises/exercise-9/workingWithApi";
+
 function App() {
-  return <div className=""></div>;
+  return <WorkingWithApi />;
 }
 
 export default App;
