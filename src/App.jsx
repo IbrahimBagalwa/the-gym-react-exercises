@@ -1,7 +1,7 @@
 import Mapping from "./exercises/exercise-6/Mapping";
 
-function App() {
+const App = () => {
   return <Mapping />;
-}
+};
 
 export default App;
