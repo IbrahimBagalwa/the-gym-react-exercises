@@ -1,19 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-
+const array = [
+  {
+    id: 1,
+    setup: "What's the best thing about a Boolean?",
+    punchline: "Even if you're wrong, you're only off by a bit",
+  },
+  {
+    id: 2,
+    setup: "Why do programmers wear glasses?",
+    punchline: "Because they need to C#",
+  },
+];
 const CardContainer = () => {
-  const [data, setData] = useState([
-    {
-      id: 1,
-      setup: "What's the best thing about a Boolean?",
-      punchline: "Even if you're wrong, you're only off by a bit",
-    },
-    {
-      id: 2,
-      setup: "Why do programmers wear glasses?",
-      punchline: "Because they need to C#",
-    },
-  ]);
+  const [data, setData] = useState(array);
   return <Card content={data} />;
 };
 
