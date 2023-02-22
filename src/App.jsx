@@ -1,5 +1,7 @@
+import Counter from "./exercises/counter";
+
 function App() {
-  return <div className=""></div>;
+  return <Counter />;
 }
 
 export default App;
