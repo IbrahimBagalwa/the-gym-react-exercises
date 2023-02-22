@@ -17,7 +17,7 @@ const Counter = () => {
         <li className="px-2">Exercise 9</li>
       </ul>
       <p className="text-center text-2xl m-10">
-        Button has been clicked {value}
+        Button has been clicked {value} : {value > 1 ? "times" : "time"}
       </p>
       <button
         className="rounded-2xl ring-1 px-2"
